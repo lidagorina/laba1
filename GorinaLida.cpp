@@ -1,7 +1,7 @@
 //a. Прямоугольник – периметр, площадь, длина диагонали;
-
 #include <iostream>
 #include <cmath>
+#include "GorinaLida.h"
 using namespace std;
 
 //для периметра
@@ -20,7 +20,7 @@ double Diagonal (double l, double w){
     return sqrt(pow(l, 2)+ pow(w, 2));
 }
 
-int main(){
+/*int main(){
     double l, w;
 
     cout << "Длина: ";
@@ -37,5 +37,5 @@ int main(){
     cout << "Площадь - " << s << endl;
     cout << "Диагональ - " << d << endl;
 
-
-}
+    return 0;
+}*/
