@@ -1,13 +1,14 @@
 #include <iostream>
 #include <cmath>
+#include "Triangle.h" 
 using namespace std;
 
-double perimeter(double a, double b, double c) {
+double perimetr(double a, double b, double c) {
     return a + b + c;
 }
 
 double ploschad(double a, double b, double c) {
-    double p = perimeter(a, b, c) / 2;
+    double p = perimetr(a, b, c) / 2;
     return sqrt(p * (p - a) * (p - b) * (p - c));
 }
 
@@ -15,7 +16,7 @@ bool ravnobedr(double a, double b, double c) {
     return (a == b) || (a == c) || (b == c);
 }
 
-int main() {
+/*int main() {
     double a, b, c;
     cout << "Cтороны треугольника: ";
     cin >> a >> b >> c;
@@ -31,4 +32,4 @@ int main() {
         cout << "Не существует" << endl;
     }
     return 0;
-}
+}*/
