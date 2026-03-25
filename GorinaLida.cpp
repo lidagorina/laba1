@@ -1,5 +1,5 @@
 //a. Прямоугольник – периметр, площадь, длина диагонали;
-
+//pypypy
 #include <iostream>
 #include <cmath>
 using namespace std;
