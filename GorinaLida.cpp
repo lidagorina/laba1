@@ -1,4 +1,5 @@
 //a. Прямоугольник – периметр, площадь, длина диагонали;
+//pypypy
 #include <iostream>
 #include <cmath>
 #include "GorinaLida.h"
