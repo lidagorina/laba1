@@ -7,10 +7,32 @@ using namespace std;
 
 int main() {
     
-    cout << "Проверим для треугольника 3, 4, 5" << endl;
-    assert(perimetr(3, 4, 5) == 12);
-    assert(ploschad(3, 4, 5) == 6.0);
-    assert(ravnobedr(3, 4, 5) == false);
+	
+		
+    cout << "Проверим для треугольника" << endl;
+    int a, b, c;
+    cin >> a >> b >> c;
+
+    if ((a <= 0) || (b <= 0) || (c <= 0))  {
+    	cout << "ne suschestvuet";
+    }
+
+    else {
+
+	 if ((a + b <  c) || (b +  c <  a) || (c + a <  b))  {
+         cout << "ne suschestvuet";
+	 }
+   
+	 else {
+	 assert(perimetr(a, b, c) == 12);
+   	 cout << perimetr(a, b, c) << endl;
+   	 assert(ploschad(a, b, c)  == 6.0);
+   	 cout << ploschad(a, b, c) << endl;
+   	 assert(ravnobedr(a, b, c) == false);
+   	 cout << ravnobedr(a, b, c) << endl;
+	 }
+    }
+
 
     cout << "Для треугольника 5, 5, 6" << endl;
     assert(perimetr(5, 5, 6) == 16);
