@@ -6,17 +6,29 @@ using namespace std;
 
 //для периметра
 double Perimetr(double l, double w){
+    if (l<0 || w<0){
+
+        return -1;
+    }
     // l = lenght - длина w = weigth - ширина
     return (l+w)*2;
 }
 
 //для площади
 double Area(double l, double w){
+    if (l<0 || w<0){
+
+        return -1;
+    }
     return l*w;
 }
 
 //длина диагонали 
 double Diagonal (double l, double w){
+    if (l<0 || w<0){
+
+        return -1;
+    }
     return sqrt(pow(l, 2)+ pow(w, 2));
 }
 
