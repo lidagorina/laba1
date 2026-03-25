@@ -2,11 +2,13 @@
 #include <iostream>
 #include <cassert>
 #include "Triangle.h"  
-
+#include "GorinaLida.h"
 using namespace std;
+
 
 int main() {
     
+
 	
 		
     cout << "Проверим для треугольника" << endl;
@@ -32,13 +34,5 @@ int main() {
    	 cout << ravnobedr(a, b, c) << endl;
 	 }
     }
+      	
 
-
-    cout << "Для треугольника 5, 5, 6" << endl;
-    assert(perimetr(5, 5, 6) == 16);
-    assert(ploschad(5, 5, 6) == 12.0);
-    assert(ravnobedr(5, 5, 6) == true);
-
-    cout << "Все проверки прошли успешно!" << endl;
-    return 0;
-}
