@@ -3,7 +3,7 @@
 #include <cmath>
 #include "GorinaLida.h"
 using namespace std;
-
+//proverka
 //для периметра
 double Perimetr(double l, double w){
     if (l>0 && w>0){
